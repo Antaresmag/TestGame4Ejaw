@@ -32,7 +32,7 @@ public class SwitchColor : MonoBehaviour
 
     void ChangeColor()
     {
-        if (name == "Cube(Clone)")
+        if (name == "Cube(Clone)" || name == "Capsule(Clone)" || name == "Sphere(Clone)")
         {
             gameObject.GetComponent<Renderer>().material.color = new Color(Random.Range(0, 1f), Random.Range(0, 1f), Random.Range(0, 1f));
             //Thread.Sleep(750);
